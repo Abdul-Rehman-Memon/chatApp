@@ -1,0 +1,34 @@
+.SideBar {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua;   */
+  border: none; /* Remove the default border */
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+}
+.iconsWrapper {
+  height: 55%;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile{
+    height: 1.6rem;
+    width: 1.6rem;
+}
+.icon {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.logoutIconWrapper {
+  height: 45%;
+  width: 100%;
+  /* border:1px blue solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}

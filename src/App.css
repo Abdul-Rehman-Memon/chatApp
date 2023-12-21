@@ -1,0 +1,32 @@
+.AppContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: aqua; */
+    background-image: url('../src/assets/ChatAppBG.png');
+    width: 100%;
+    height: 37.5rem;
+   backdrop-filter: blur(5px);
+    /* opacity: 10%; */
+}
+
+.App{
+    width: 80%;
+    height: 90%;
+    background: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.1);
+    border-color: #B5AFAF;
+    border-width: 0.1rem;
+}
+
+.SideBarCol{
+    height: 100%;
+    width: 100%;
+}
+.ChatListCol{
+    height: 100%;
+    width: 100%;
+    /* background-color: pink; */
+}

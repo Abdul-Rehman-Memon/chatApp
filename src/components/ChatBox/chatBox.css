@@ -1,0 +1,143 @@
+.chatBoxContainer {
+  width: 100%;
+  height: 100%;
+}
+.TopBar {
+  width: 100%;
+  height: 15%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.ProfilePicWrapper {
+  width: 28%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ProfilePic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.nameContainer {
+  width: 50%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nameWrapper {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.name {
+  font-weight: 600;
+  font-size: 17px;
+}
+.status {
+  font-size: 12px;
+  font-weight: 600;
+  color: #7c7b98;
+  /* background-color: aqua; */
+  width: 25%;
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+.iconContainer {
+  width: 15%;
+  height: 80%;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChatContainer {
+  width: 100%;
+  height: 75%;
+  /* background-color: blue; */
+}
+
+/* chatcontainerCSS/Starts */
+.chatMessageContainer{
+  padding:0.35rem .8rem 0 .8rem;
+  clear: both;
+  width: max-content;
+  min-height: 2rem;
+   margin-top: 1rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.175);
+} 
+
+.me{
+
+  background-color: #3221F4;
+  color: white;
+  float: right;
+}
+.you{ 
+  background-color: #FFF;
+  color: black;
+  float: left;
+
+}
+
+/* textingContainerCSS/starts */
+.TextingContainer {
+  width: 100%;
+  height: 10%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: #f4f4f4 0px -3px;
+}
+.TextingContainer::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 0px;
+  /* bottom: 0px; */
+  width: 90%;
+  height: 2px;
+  background-color: #000000ce;
+}
+.textInputFieldWrapper {
+  width: 70%;
+  height: 80%;
+}
+
+.textInputField {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding-left: 1.4rem;
+  border: none;
+}
+.iconssWrapper {
+  width: 20%;
+  height: 80%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  width: 22px;
+  height: 22px;
+}
