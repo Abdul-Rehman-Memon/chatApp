@@ -9,23 +9,7 @@ import EmojiIcon from "../../assets/Emoji.png";
 import AttachmentIcon from "../../assets/attachment.png";
 import SendIcon from "../../assets/iconamoon_send-fill.png";
 
-
 const ChatBox = (props) => {
-  let user = [
-    {
-      id: 1,
-      type:'you',
-      message: "Hi, how are you hamza?",
-      time: "10:00",
-    },
-    {
-      id: 2,
-      type:'me',
-      message: "fine",
-      time: "10:00",
-    },
-  ]
- 
   return (
     <div className="chatBoxContainer">
       <div className="TopBar container">
@@ -45,7 +29,11 @@ const ChatBox = (props) => {
           </div>
           <div className="status">
             <p>
-              <FiberManualRecordIcon fontSize="smaller" color="success" />
+              <FiberManualRecordIcon
+                fontSize="smaller"
+                color="success"
+                style={{ marginTop: "-1px" }}
+              />
               Online
             </p>
           </div>
@@ -62,13 +50,18 @@ const ChatBox = (props) => {
       {/* chatContainer Start */}
       <div></div>
       <div className="ChatContainer px-3">
-        {user.map((user) => {
-        return (<div key={user.id} className={`chatMessageContainer ${ user.type === 'me' ? 'me' : 'you' }`}>
-          <p className="chatMessages ">{user.message}</p>
-        </div>)
-       
-})}
-        
+        {props.chats.messages.map((user) => {
+          return (
+            <div
+              key={user.id}
+              className={`chatMessageContainer ${
+                user.type === "me" ? "me" : "you"
+              }`}
+            >
+              <p className="chatMessages ">{user.message}</p>
+            </div>
+          );
+        })}
       </div>
       {/* chatContainer ends */}
 
