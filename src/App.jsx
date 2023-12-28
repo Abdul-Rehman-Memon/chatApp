@@ -9,7 +9,6 @@ import vector from "../src/assets/ChatBg.png";
 
 function App() {
   const [data, setData] = useState("");
-  const [chat, setChat] = useState("");
   return (
     <>
       <div className="AppContainer">

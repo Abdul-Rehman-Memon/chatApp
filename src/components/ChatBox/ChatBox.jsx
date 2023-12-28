@@ -10,6 +10,11 @@ import AttachmentIcon from "../../assets/attachment.png";
 import SendIcon from "../../assets/iconamoon_send-fill.png";
 
 const ChatBox = (props) => {
+
+  let chat = [
+    
+  ]
+
   return (
     <div className="chatBoxContainer">
       <div className="TopBar container">
@@ -48,20 +53,21 @@ const ChatBox = (props) => {
         </div>
       </div>
       {/* chatContainer Start */}
-      <div></div>
-      <div className="ChatContainer px-3">
-        {props.chats.messages.map((user) => {
-          return (
-            <div
-              key={user.id}
-              className={`chatMessageContainer ${
-                user.type === "me" ? "me" : "you"
-              }`}
-            >
-              <p className="chatMessages ">{user.message}</p>
-            </div>
-          );
-        })}
+      <div className="ChatContainerParent">
+        <div className="ChatContainer px-3">
+          {props.chats.messages.map((user) => {
+            return (
+              <div
+                key={user.id}
+                className={`chatMessageContainer ${
+                  user.type === "me" ? "me" : "you"
+                }`}
+              >
+                <p className="chatMessages ">{user.message}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
       {/* chatContainer ends */}
 
