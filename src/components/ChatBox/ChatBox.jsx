@@ -10,10 +10,7 @@ import AttachmentIcon from "../../assets/attachment.png";
 import SendIcon from "../../assets/iconamoon_send-fill.png";
 
 const ChatBox = (props) => {
-
-  let chat = [
-    
-  ]
+  let chat = [];
 
   return (
     <div className="chatBoxContainer">

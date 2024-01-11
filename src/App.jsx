@@ -1,11 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
-import ChatList from "./components/ChatList/ChatList";
 import ChatBox from "./components/ChatBox/ChatBox";
-import SideNavbar from "./components/sideNavbar/SideNavbar";
 import { useState } from "react";
 import vector from "../src/assets/ChatBg.png";
+import SideNavbarContainer from "./containers/SideBarContainer";
+import ChatListContainer from "./containers/ChatListContainer";
+import ChatBoxContainer from "./containers/ChatBoxContainer"
 
 function App() {
   const [data, setData] = useState("");
@@ -15,10 +16,10 @@ function App() {
         <div className="App p-2">
           <Row style={{ height: "100%" }}>
             <Col className="SideBarCol" md={1}>
-              <SideNavbar />
+              <SideNavbarContainer/>
             </Col>
             <Col className="ChatListCol" md={4}>
-              <ChatList
+              <ChatListContainer
                 sendUserData={(data) => setData(data)}
                 chat={(chat) => {
                   setChat(chat);
@@ -34,7 +35,7 @@ function App() {
                   </div>
                 </div>
               ) : (
-                <ChatBox userInfo={data} chats={chat} />
+                <ChatBoxContainer userInfo={data} chats={chat} />
               )}
             </Col>
           </Row>
